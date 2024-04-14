@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins" sans-serif;
+}
+#top-scrollbar{
+    position: fixed;   
+    bottom: 5%;
+    right: 3%;
+    top: auto;
+    left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rebeccapurple;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    z-index: 20;
+    opacity: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: whitesmoke;
+}
+h1{
+    font-weight: 800;
+    font-size: 36px;
+}
+h2{
+    font-weight: 800;
+    font-size: 24px;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1,h2,p{
+    margin: 16px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+section{
+    padding:100px 0;
+}
+
+/* hero */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(images/profile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo h1{
+    font-size: 38px;
+    color: whitesmoke;
+    margin:0;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+nav box-icon{
+    display: none;
+}
+nav ul{
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+nav ul li a:hover{
+    color: orangered;
+    transition: .5s ease-in-out;
+}
+
+#header-content{
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 8%;
+    color: whitesmoke;
+}
+
+#header-content .txt{
+    border-radius: 5px;
+    background-color: orangered;
+    height: 50px;
+    width: 120px;
+    padding: 5px 15px;
+    font-size: 40px;
+}
+#header-content h1{
+    font-size: 45px;
+}
+#header-content h2{
+    background-color: orangered;
+    padding: 15px 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+#header-content p{
+    font-size: 25px;
+}
+#header-content .btn{
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 200px;
+    float: left;
+    font-size: 17px;
+}
+
+/* Skills sections */
+#skills{
+    background-color: black;
+}
+.skills-title{
+    width: 100%;
+    
+}
+.skills-title h1{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+.skills-list{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 140px;
+}
+.skills-name{
+    font-size: 20px;
+    background-color:whitesmoke;
+    margin: 21px;
+    padding: 20px;
+}
+
+/*--------  Certificats------ */
+#certificats{
+    background-color: black;
+}
+.cert-title{
+    width: 100%;
+    
+}
+.cert-title h1{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+.list-certificats{
+    display: flex;
+    color: whitesmoke;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15px 15px;
+    margin: 10px 15px;
+    width: 100%;
+
+}
+.certificat{
+    border: 2px solid gray;
+    margin: 15px 15px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px white;
+    height: 170px;
+    width: 300px;
+   
+}
+.certificat h2{
+    color: rgb(235, 112, 68);
+}
+/* ---- Project section---- */
+
+
+#projects{
+    background-color: black;
+    color: black;
+}
+.project-title{
+    width: 100%;
+}
+.project-title h1{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    padding: 20px 20px;
+
+}
+.project{
+    height: 450px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.project .image{
+    width: 100%;
+    height: 180px;
+    
+}
+.project .text-content{
+    color: black;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+#projects .btn{
+    background-color: black;
+    color: whitesmoke;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* #projects .project{
+    background-color: whitesmoke;
+    padding: 4px 8px;
+    margin: 0 5px;
+    height: 450px;
+    border-radius: 5px;
+    
+}
+#projects .btn{
+    background-color: black;
+    color: whitesmoke;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+
+
+/* ---- Eductions sections --- */
+
+#educations{
+    background-color: black;
+    color: whitesmoke;
+    padding: 100px 15px;
+}
+.education-title{
+    width: 100%; 
+    
+}
+.education-title h1{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.educ-left{
+    width: 50%;
+
+}
+.educ-left img{
+    width: 85%;
+    height: 350px;
+    padding: 10 50px;
+    margin: 0px 50px;
+    box-shadow: 10px 10px 5px whitesmoke;
+}
+.educ-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.educ-right .education{
+    border: 1px solid whitesmoke;
+    margin: 5px 5px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.educ-right .std{
+    color: rgb(235, 112, 68);
+}
+
+
+/*----- contact------ */
+  
+#contact{
+    background-color: black;
+    color: whitesmoke;
+}
+#contact .contact-title{
+    text-align: center;
+    border: 2px solid whitesmoke;
+    width: 100%;
+}
+.con-left{
+    width: 50%;
+    margin: 0px 15px;
+   
+}
+
+.con-left a i{
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px 2px;
+}
+.con-right{
+    width: 50%;
+}
+form{
+    margin: 24px 0px;
+}
+input{
+    font-size: 18px;
+}
+input[type=text],
+input[type=email],
+input[type=tel]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 12px 0px;
+    display: block;
+    border: 1px solid whitesmoke;
+}
+input[type=submit]{
+    width: 80%;
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}
+textarea{
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid whitesmoke;
+    font-size: 13px;
+    resize: none;
+    color: black;
+    margin: 12px 0;
+    font-family: "Poppins" sans-serif;
+
+}
+input::placeholder{
+    font-size: 13px;
+    color: gray;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    margin:  0px ;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0px ;
+}
+
+
+
+
+
+@media only screen and (max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction:column;
+        position: relative;
+    }
+    nav box-icon{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a{
+        color: black;
+    }
+
+    #header-content {
+        text-align: center;
+        width: 80%;
+        margin: -30px 0px;
+    }
+    #header-content .txt{
+        margin-left: 220px;
+    }
+    #header-content h2{
+        margin:40px 130px;
+    }
+    #header-content .btn{
+        margin: 20px 30px;
+    }
+    .project{
+        width: 75%;
+    }
+    .certificat{
+        width: 70%;
+        margin: 20px 60px;
+    }
+    .education{
+        width: 100%;
+       
+    }
+    .educ-left{
+        display: none;
+    }
+    .con-left{
+        width: 90%;
+    }
+    .con-left h1,h2{
+        font-size: 21px;
+        font-weight: 800;
+    
+    }
+    .con-left i{
+        size: 100%;
+    }
+        
+    
+    .con-right{
+        width: 90%;
+    }
+
+}
