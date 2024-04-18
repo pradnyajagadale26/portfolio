@@ -156,6 +156,9 @@ nav ul li a:hover{
     padding: 20px 20px;
     
 }
+.skills-title h1:hover{
+    color: orangered;
+}
 .skills-list{
     background-color:black;
     display: flex;
@@ -168,6 +171,9 @@ nav ul li a:hover{
     background-color:whitesmoke;
     margin: 21px;
     padding: 20px;
+}
+.skills-name:hover{
+    color: orange;
 }
 
 /*--------  Certificats------ */
@@ -185,15 +191,17 @@ nav ul li a:hover{
     padding: 20px 20px;
     
 }
+.cert-title h1:hover{
+    color: orangered;
+}
 .list-certificats{
     display: flex;
     color: whitesmoke;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     padding: 15px 15px;
     margin: 10px 15px;
     width: 100%;
-
 }
 .certificat{
     border: 2px solid gray;
@@ -225,6 +233,9 @@ nav ul li a:hover{
     text-align: center;
     padding: 20px 20px;
 
+}
+.project-title h1:hover{
+    color: orangered;
 }
 .project{
     height: 450px;
@@ -298,6 +309,9 @@ nav ul li a:hover{
     padding: 20px 20px;
     
 }
+.education-title h1:hover{
+    color: orangered;
+}
 
 .educ-left{
     width: 50%;
@@ -336,6 +350,9 @@ nav ul li a:hover{
     text-align: center;
     border: 2px solid whitesmoke;
     width: 100%;
+}
+.contact-title h1:hover{
+    color: orangered;
 }
 .con-left{
     width: 50%;
@@ -445,16 +462,39 @@ footer{
     #header-content {
         text-align: center;
         width: 80%;
-        margin: -30px 0px;
+        margin: -30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     #header-content .txt{
-        margin-left: 220px;
+        justify-content: center;
+        text-align: center;
+        font-size: 0px;
+        height: 45px;
+        width: 110px;
+        padding: 5px 15px;
+        font-size: 30px;
+        margin: 0 40%;
+    }
+    #header-content h1{
+        font-size: 35px;
+        margin-top: -10px;
     }
     #header-content h2{
-        margin:40px 130px;
+        justify-content: center;
+        text-align: center;
+        margin:0 22%;
+        padding: 10px 10px ;
+        height: 45px;
+        width: 250px;
+    }
+    #header-content p{
+        font-size: 20px;
     }
     #header-content .btn{
-        margin: 20px 30px;
+        margin: 20px 80px;
+        display:block;
     }
     .project{
         width: 75%;
@@ -462,6 +502,9 @@ footer{
     .certificat{
         width: 70%;
         margin: 20px 60px;
+    }
+    .list-certificats{
+        flex-wrap: wrap;
     }
     .education{
         width: 100%;
