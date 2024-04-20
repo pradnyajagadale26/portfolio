@@ -389,3 +389,18 @@ textarea {
 
 
 /* ================================ end ================================ */
+
+/* ============================= Media Query For Mobile ==================== */
+
+
+@media screen and (max-width: 425px) {
+    #header-content, 
+    #skills, 
+    #projects,
+    #certificates,
+    #educations,
+    #contact{
+        padding: 40px 30px;
+    }
+}
+/* ================================ end ================================ */
