@@ -8,6 +8,9 @@
 body{
     font-family: "Poppins" sans-serif;
 }
+
+
+/* ==================== Full Screen laptop, PC, etc. he right ahe  ================== */
 #top-scrollbar{
     position: fixed;   
     bottom: 5%;
@@ -105,7 +108,7 @@ nav ul li a:hover{
     width: 50%;
     position: relative;
     top: 10%;
-    left: 8%;
+    /* left: 8%; */
     color: whitesmoke;
 }
 
@@ -161,15 +164,19 @@ nav ul li a:hover{
 }
 .skills-list{
     background-color:black;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
+    margin: 0 140px;
+    grid-gap: 1rem;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 140px;
+    margin: 0 140px; */
 }
 .skills-name{
     font-size: 20px;
     background-color:whitesmoke;
-    margin: 21px;
+    /* margin: 21px; margin pn responsive made kami ghyavi lagel  */
     padding: 20px;
 }
 .skills-name:hover{
@@ -429,11 +436,16 @@ footer{
 
 
 
-
+/* ================== Mid Screen tablets sathi ======================= */
+/* thod right ahe thod nay */
 @media only screen and (max-width:768px){
+    /* multiple jagi same class asel tr sagli kade same effect hoil saglyancha direction column made yeil ya muel
+    individual address de means conflict nahi honar
+    */
     .row{
         flex-direction: column;
     }
+
     nav{
         flex-direction:column;
         position: relative;
@@ -465,7 +477,12 @@ footer{
         margin: -30px 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    #header-content > div {
+        display: flex;
     }
     #header-content .txt{
         justify-content: center;
