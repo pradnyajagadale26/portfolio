@@ -25,7 +25,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0px 50px;
     height: 70px;
 }
 nav .logo {
@@ -33,11 +33,13 @@ nav .logo {
 }
 nav ul {
     list-style-type: none;
-    display: flex;
     gap: 15px;
 }
 nav ul li{
     font-size:3vmin ;
+    display: inline-block;
+    margin-left: 30px;
+    
 }
 nav ul li a:hover{
     color: orangered;
@@ -63,9 +65,9 @@ header{
     color: whitesmoke;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
     height: 500px;
-    padding: 20px 100px ;
+    padding: 30px 100px ;
     font-size: 4vmin;
     /* margin: 20px 20px; */
 }
@@ -134,6 +136,12 @@ header{
 #projects{
     padding: 40px 100px;
     
+}
+#projects .row {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15.25rem, 100%), 1fr)) ;
+    grid-gap:10px;
 }
 .project-title{
     border: 2px solid whitesmoke;
@@ -222,12 +230,7 @@ header{
 #educations{
     padding: 40px 100px;
 }
-#projects .row {
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(15.25rem, 100%), 1fr)) ;
-    grid-gap:10px;
-}
 #educations .row {
 
     display: grid;
@@ -255,11 +258,15 @@ header{
     text-align: center;
     color: whitesmoke;
     align-items: center;
+    font-size: 3vmin;
 }
 .education{
     grid-template-rows: auto;
     border: 2px solid whitesmoke;
     padding: 20px 20px;
+}
+.std{
+    color: rgb(255, 115, 0);;
 }
 #educations img{
     height: 300px;
@@ -336,17 +343,53 @@ textarea {
 /* ======================== Media Query for Tablet ==================== */
 
 /* 1. Navigation Bar -  */
+@media screen and (max-width:968px){
+    nav {
+        flex-direction: column;
+        position: relative;
+        align-items: normal;
+        padding: 60px 30px;
+    }
+    
+    nav box-icon{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+        cursor: pointer;
+    }
+    .logo{
+        position: absolute;
+        top: 18px;
+        left: 32px;
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 8%;
+    }
+    nav ul li a{
+        color: black;
+        font-size: 20px;
+    }
+    
+}
+
 
 /* 2. education section */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
         
     #educations{
-        padding: 40px 100px;
+        padding: 50px 100px;
     }
-    
     #educations .row {
-
         display: flex;
         flex-direction: column;
         gap:10px;
@@ -383,6 +426,37 @@ textarea {
     #contact > .row > div {
         width: 100%;
     }
+
+    /* header section */
+    #header-content {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 500px;
+        
+        font-size: 4vmin;
+        /* margin: 20px 20px; */
+    }
+    .ctn{
+        border: none;
+        border-radius: 10px;
+        background-color: orangered;
+        padding: 15px 15px;
+        font-size: 4vmin;
+    }
+    .btn{
+        border-radius: 50px;
+        background-color: black;
+        color: whitesmoke;
+        padding: 20px 20px;
+        display: inline-block;
+        font-size: 3vmin;
+        
+    }
+    
 
 }
 
