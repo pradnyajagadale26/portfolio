@@ -378,6 +378,8 @@ textarea {
         color: black;
         font-size: 20px;
     }
+
+
     
 }
 
@@ -438,24 +440,10 @@ textarea {
         height: 500px;
         
         font-size: 4vmin;
-        /* margin: 20px 20px; */
+      
     }
-    .ctn{
-        border: none;
-        border-radius: 10px;
-        background-color: orangered;
-        padding: 15px 15px;
-        font-size: 4vmin;
-    }
-    .btn{
-        border-radius: 50px;
-        background-color: black;
-        color: whitesmoke;
-        padding: 20px 20px;
-        display: inline-block;
-        font-size: 3vmin;
-        
-    }
+    
+    
     
 
 }
